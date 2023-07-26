@@ -1,4 +1,4 @@
-.PHONY: default cookiecutter go_mod_tidy shim_go_mod_tidy
+.PHONY: default cookiecutter go_mod_tidy shim_go_mod_tidy tfgen
 
 SKIP_EXISTING= -s
 
@@ -12,3 +12,6 @@ go_mod_tidy:
 
 shim_go_mod_tidy:
 	docker run -it -v ${PWD}:/provider --entrypoint go -w "/provider/pulumi-harvester/provider/shim" pulumi-tf-provider-cookiecutter mod tidy
+
+tfgen:
+	docker run -it -v ${PWD}:/provider --entrypoint make -w "/provider/pulumi-harvester" pulumi-tf-provider-cookiecutter "tfgen"
