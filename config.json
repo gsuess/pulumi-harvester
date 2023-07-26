@@ -1,0 +1,17 @@
+{
+  "terraform_provider_name": "harvester",
+  "terraform_provider_org": "harvester",
+  "terraform_provider_source": "github.com/harvester/terraform-provider-harvester",
+  "terraform_provider_version_or_commit": "0.6.2",
+  "terraform_provider_module": "github.com/harvester/terraform-provider-harvester",
+  "terraform_provider_package_name": "internal/provider",
+  "terraform_sdk_version": "2",
+  "provider": "pulumi-harvester",
+  "provider_display_name": "Harvester",
+  "provider_logoUrl": "https://www.rancher.com/assets/img/brand-guidelines/project-logos/harvester/logo-horizontal-harvester.svg",
+  "provider_category": "infrastructure",
+  "go_version": "1.19",
+  "create_github_workflows": "yes",
+  "skip_go_mod_tidy": "no",
+  "skip_git_init": "yes"
+}
